@@ -5,3 +5,9 @@ Related Topics:
 2. 
 
 Applications: See the overleaf
+
+
+Fractal Examples:
+1. Koch Snowflake
+2. Mandelbrot
+3. Julia
