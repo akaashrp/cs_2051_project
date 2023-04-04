@@ -1,1 +1,1 @@
-# cs_2051_project
+# CS 2051 Project
