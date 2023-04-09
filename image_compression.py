@@ -19,6 +19,7 @@ def compress_image(image_path, block_size):
     # Define a set of mathematical transformations
     # that can be applied to each block to generate
     # a larger version of the same image.
+    
 
     # For each block, use an optimization algorithm
     # to find the set of mathematical transformations
