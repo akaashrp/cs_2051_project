@@ -1,4 +1,4 @@
-# CS 2051 Project
+# CS 2051 Project: Recursive Algorithms and Fractals
 
 Related Topics:
 1. Chaos Theory
