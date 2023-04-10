@@ -20,3 +20,4 @@ pendown()
 
 koch(300, 5)
 done()
+pen.hideturtle()
