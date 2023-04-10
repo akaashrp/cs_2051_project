@@ -19,5 +19,5 @@ goto(-150, 0)
 pendown()
 
 koch(300, 5)
+hideturtle()
 done()
-pen.hideturtle()
