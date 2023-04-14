@@ -17,9 +17,10 @@ void setup() {
 
 void loop() {
   num = random(255);
-  msg = num;
-  rf_driver.send((uint8_t *)msg, strlen(msg));
+  msg = "Hello!";
+  rf_driver.send(msg, strlen(msg));
   rf_driver.waitPacketSent();
-  Serial.println(index + " " + output);
+  Serial.println(String(index) + " " + String(msg));
   index++;
+  delay(2000);
 }
