@@ -2,7 +2,7 @@
 #include <SPI.h> 
  
 // Create Amplitude Shift Keying Object
-int index;
+int index = 0;
 RH_ASK rf_driver;
 
 void setup()
@@ -17,14 +17,14 @@ void setup()
 void loop()
 {
     // Set buffer to size of expected message
-    uint8_t buf[1];
+    char buf[6];
     uint8_t buflen = sizeof(buf);
     // Check if received packet is correct size
     if (rf_driver.recv(buf, &buflen))
     {
       
       // Message received with valid checksum
-      Serial.println(index + " " + (int) buf);  
+      Serial.println(String(index) + " " + String(buf).substring(0, buflen));  
       index++;       
     }
 }
