@@ -6,7 +6,6 @@ RH_ASK rf_driver;
 int num;
 int index;
 char *msg;
-String output;
 
 void setup() {
     // Initialize ASK Object
