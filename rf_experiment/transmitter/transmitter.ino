@@ -5,7 +5,9 @@
 RH_ASK rf_driver;
 int num;
 int index;
-char *msg;
+String msg;
+char buf[10];
+const int buflen = 10;
 
 void setup() {
     // Initialize ASK Object
@@ -16,10 +18,11 @@ void setup() {
 
 void loop() {
   num = random(255);
-  msg = "Hello!";
-  rf_driver.send(msg, strlen(msg));
+  msg = String(index) + " " + "Hello!";
+  msg.toCharArray(buf, buflen);
+  rf_driver.send(buf, buflen);
   rf_driver.waitPacketSent();
-  Serial.println(String(index) + " " + String(msg));
+  Serial.println(msg);
   index++;
   delay(2000);
 }

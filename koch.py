@@ -14,6 +14,7 @@ def koch(a, order):
         koch(a/3, order-1)
 
 #setup
+speed('fastest')
 penup()
 goto(-150, 0)
 pendown()
