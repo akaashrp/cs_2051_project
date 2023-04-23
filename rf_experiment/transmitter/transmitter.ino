@@ -17,12 +17,12 @@ void setup() {
 }
 
 void loop() {
-  num = random(255);
-  msg = String(index) + " " + "Hello!";
-  msg.toCharArray(buf, buflen);
-  rf_driver.send(buf, buflen);
-  rf_driver.waitPacketSent();
-  Serial.println(msg);
-  index++;
-  delay(2000);
+    num = random(255);
+    msg = String(index) + " " + "Hello!";
+    msg.toCharArray(buf, buflen);
+    rf_driver.send(buf, buflen);
+    rf_driver.waitPacketSent();
+    Serial.println(msg);
+    index++;
+    delay(2000);
 }
