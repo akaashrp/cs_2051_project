@@ -1,6 +1,6 @@
 from manim import *
 
-class Koch(Scene):
+class koch_animation(Scene):
     def construct(self):
         def KochCurve(
             n, length=12, stroke_width=8, color=("#FF4500", "#FFA500", "#FED8B1")
@@ -45,4 +45,4 @@ class Koch(Scene):
             )
             self.wait()
 
-Koch().render()
+koch_animation().render()

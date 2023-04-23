@@ -1,5 +1,4 @@
 from turtle import *
-import time
 
 def koch(a, order):
     if order == 0:
@@ -14,7 +13,7 @@ def koch(a, order):
         koch(a/3, order-1)
 
 #setup
-speed('fastest')
+speed(fastest)
 penup()
 goto(-150, 0)
 pendown()
