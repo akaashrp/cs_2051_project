@@ -19,19 +19,19 @@ plt.imshow(is_stable(0, c, num_iterations=50), cmap='binary') # full mandelbrot 
 plt.gca().set_aspect("equal")
 plt.axis("off")
 plt.tight_layout()
-plt.savefig("mandelbrot.pdf", format="pdf")
+plt.savefig("../images/mandelbrot.pdf", format="pdf")
 plt.show()
 
 plt.imshow(is_stable(0, seahorse, num_iterations=300), cmap='binary') # sea horse valley
 plt.gca().set_aspect("equal")
 plt.axis("off")
 plt.tight_layout()
-plt.savefig("seahorse.pdf", format="pdf")
+plt.savefig("../images/seahorse.pdf", format="pdf")
 plt.show()
 
 plt.imshow(is_stable(0, elephant, num_iterations=300), cmap='binary') # elephant valley
 plt.gca().set_aspect("equal")
 plt.axis("off")
 plt.tight_layout()
-plt.savefig("elephant.pdf", format="pdf")
+plt.savefig("../images/elephant.pdf", format="pdf")
 plt.show()
